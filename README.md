@@ -19,11 +19,11 @@ In today's fast-paced world, **mental health often takes a backseat**. Many peop
 ✔️ **Mindfulness Exercises** – Guided breathing and meditation sessions.  
 ✔️ **Community Support** – Connect with others in a judgment-free zone.  
 ✔️ **Resource Library** – Self-help guides, expert articles, and mental health tips.  
-✔️ **Dark Mode** – Because aesthetics matter. 😉  
+
 
 ## 🛠️ Tech Stack
 - **Frontend:** HTML, CSS, JavaScript (React recommended for scalability)  
-- **Backend:** (To be decided: Node.js, Django, or Flask)  
+- **Backend:** (To be decided)  
 
 ## 🎯 Future Plans
 🔹 AI Chatbot for mental health support  
