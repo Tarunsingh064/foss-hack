@@ -3,10 +3,117 @@ import Meditation from '@/assets/Meditation.jpg';
 import Treatment from '@/assets/Treatment.avif'; 
 import Twitter from '@/assets/Twitter.webp'; 
 import { Link } from 'react-router-dom';
-
+import { useState } from 'react';
+import ai from "@/assets/ai.jpg"
 const Home = () => {
+
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  const [qIndex, setQIndex] = useState(0);
+  const [answers, setAnswers] = useState([]);
+
+  const questions = [
+    {
+      question: "What symptoms are you experiencing?",
+      options: ["Feeling sad", "Depressed", "Anxiety", "Overthinking", "Panic attacks", "Mood swings"],
+    },
+    {
+      question: "How long have you had these symptoms?",
+      options: ["<1 week", "1-2 weeks", ">1 month", ">2 months", ">6 months"],
+    },
+    {
+      question: "Any other symptoms?",
+      options: ["Loss of interest", "Impulsive behavior", "Hallucinations", "Disturbed sleep", "None"],
+    },
+  ];
+
+  const doctors = {
+    Psychiatrist: [{ name: "Dr. Sanjay Chugh", contact: "New Delhi" }],
+    Psychologist: [{ name: "Dr. Sameer Parikh", contact: "Fortis Healthcare" }],
+  };
+
+  const conditions = {
+    "Feeling sad,>2 weeks,Loss of interest": {
+      diagnosis: ["Depression"],
+      remedies: ["Regular exercise", "Mindfulness meditation", "Journaling", "Social support"],
+      doctors: ["Psychiatrist"],
+    },
+  };
+
+  const toggleChat = () => {
+    setIsChatOpen(!isChatOpen);
+    if (!isChatOpen) {
+      setQIndex(0);
+      setAnswers([]);
+    }
+  };
+
+  const recordAnswer = (answer) => {
+    setAnswers([...answers, answer]);
+    setQIndex(qIndex + 1);
+  };
+
+  const showDiagnosis = () => {
+    const key = answers.join(",");
+    const result = conditions[key] || {
+      diagnosis: ["General Consultation Needed"],
+      remedies: ["Maintain hydration", "Monitor symptoms"],
+      doctors: ["General Physician"],
+    };
+  }
+
+
   return (
     <>
+    <div className="fixed bottom-5 right-5 z-50">
+      {/* Chatbot Button */}
+      <div
+        className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center cursor-pointer shadow-lg"
+        onClick={toggleChat}
+      >
+        <img src={ai} alt="Chatbot" className="w-10 h-10 animate-ping" />
+      </div>
+
+      {/* Chat Box */}
+      {isChatOpen && (
+        <div className="w-80 h-[400px] bg-white rounded-lg shadow-lg flex flex-col mt-2">
+          {/* Chat Header */}
+          <div className="bg-blue-500 text-white p-4 rounded-t-lg flex justify-between items-center">
+            <span className="font-semibold">Health Assistant</span>
+            <span className="cursor-pointer text-xl" onClick={toggleChat}>
+              ×
+            </span>
+          </div>
+
+          {/* Chat Content */}
+          <div className="flex-1 p-4 overflow-y-auto">
+            {qIndex < questions.length ? (
+              <>
+                <div className="bg-gray-100 p-3 rounded-lg mb-3">
+                  {questions[qIndex].question}
+                </div>
+                <div className="grid gap-2">
+                  {questions[qIndex].options.map((option, index) => (
+                    <button
+                      key={index}
+                      className="bg-white border border-gray-200 p-2 rounded-full text-sm hover:bg-gray-50"
+                      onClick={() => recordAnswer(option)}
+                    >
+                      {option}
+                    </button>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <div className="bg-gray-100 p-3 rounded-lg">
+                {showDiagnosis()}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  
+
       
       <div className="w-full h-[50vh] pt-20 flex flex-col justify-center items-center bg-black px-4">
         <h1 className="text-4xl md:text-5xl text-[#c6d8e2] text-center mb-6 font-serif">

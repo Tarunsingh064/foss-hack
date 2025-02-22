@@ -8,6 +8,7 @@ import Post from './mycomponent/othercomponent/post'
 import Login from './mycomponent/othercomponent/login'
 import Signup from './mycomponent/othercomponent/signup'
 import Home from './mycomponent/othercomponent/Home'
+import Dashboard from './mycomponent/othercomponent/dashboard'
 
 const router = createBrowserRouter([
 
@@ -63,6 +64,15 @@ const router = createBrowserRouter([
     <div>
       <Navbar/>
       <Signup/>
+      <Footer/>
+    </div>
+  },
+  {
+    path:'/dashboard',
+    element:
+    <div>
+      <Navbar/>
+      <Dashboard/>
       <Footer/>
     </div>
   },
