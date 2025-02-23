@@ -163,7 +163,7 @@ Join us on this journey to better mental health—because you’re not alone. �
         <div className="flex flex-col w-80 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105  border-1 hover:border-gray-300 p-4">
           
           <div className="text-center py-4 bg-gray-200 rounded-t-2xl">
-            <h1 className="text-xl font-bold text-black font-serif"><Link to="/Post">Twitter</Link></h1>
+            <h1 className="text-xl font-bold text-black font-serif"><Link to="/Post">community support</Link></h1>
           </div>
           
           <div className="w-full">

@@ -25,7 +25,7 @@ const Navbar = () => {
           <li className='text-amber-50 text-xl font-bold hover-text-amber-50 font-serif'><Link to="/">Home</Link></li>
           <li className=' text-xl hover-text-amber-50 font-bold font-serif'><Link to="/chalanges">Treatment</Link></li>
             <li className=' text-xl hover-text-amber-50 font-bold font-serif'><Link to="/Meditation">Meditation</Link></li>
-          <li className=' text-xl hover-text-amber-50 font-bold font-serif'><Link to="/Post">Post</Link></li>
+          <li className=' text-xl hover-text-amber-50 font-bold font-serif'><Link to="/Post">community support</Link></li>
 
 
         </ul>
@@ -48,7 +48,7 @@ const Navbar = () => {
         <li className='text-amber-50 text-xl font-bold font-serif'><Link to="/">Home</Link></li>
           <li className=' text-xl hover-text-amber-50 font-bold font-serif'><Link to="/chalanges">Treatment</Link></li>
             <li className=' text-xl hover-text-amber-50 font-bold font-serif'><Link to="/Meditation">Meditation</Link></li>
-          <li className=' text-xl hover-text-amber-50 font-bold font-serif'><Link to="/Post">Post</Link></li>
+          <li className=' text-xl hover-text-amber-50 font-bold font-serif'><Link to="/Post">community support</Link></li>
         </ul>
 
         <ul className="flex flex-col gap-5 p-4">
