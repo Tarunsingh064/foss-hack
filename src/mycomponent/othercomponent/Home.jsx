@@ -3,6 +3,7 @@ import Meditation from '@/assets/Meditation.jpg';
 import Treatment from '@/assets/Treatment.avif'; 
 import Twitter from '@/assets/Twitter.webp'; 
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD
 import { useState } from 'react';
 import ai from "@/assets/ai.jpg"
 const Home = () => {
@@ -114,6 +115,12 @@ const Home = () => {
     </div>
   
 
+=======
+
+const Home = () => {
+  return (
+    <>
+>>>>>>> 4c65b3ea9e291544bfa95a9f0a31ee93e2b0c7a2
       
       <div className="w-full h-[50vh] pt-20 flex flex-col justify-center items-center bg-black px-4">
         <h1 className="text-4xl md:text-5xl text-[#c6d8e2] text-center mb-6 font-serif">
@@ -163,7 +170,11 @@ Join us on this journey to better mental health—because you’re not alone. �
         <div className="flex flex-col w-80 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105  border-1 hover:border-gray-300 p-4">
           
           <div className="text-center py-4 bg-gray-200 rounded-t-2xl">
+<<<<<<< HEAD
             <h1 className="text-xl font-bold text-black font-serif"><Link to="/Post">community support</Link></h1>
+=======
+            <h1 className="text-xl font-bold text-black font-serif"><Link to="/Post">Twitter</Link></h1>
+>>>>>>> 4c65b3ea9e291544bfa95a9f0a31ee93e2b0c7a2
           </div>
           
           <div className="w-full">

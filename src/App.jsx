@@ -8,7 +8,10 @@ import Post from './mycomponent/othercomponent/post'
 import Login from './mycomponent/othercomponent/login'
 import Signup from './mycomponent/othercomponent/signup'
 import Home from './mycomponent/othercomponent/Home'
+<<<<<<< HEAD
 import Dashboard from './mycomponent/othercomponent/dashboard'
+=======
+>>>>>>> 4c65b3ea9e291544bfa95a9f0a31ee93e2b0c7a2
 
 const router = createBrowserRouter([
 
@@ -67,6 +70,7 @@ const router = createBrowserRouter([
       <Footer/>
     </div>
   },
+<<<<<<< HEAD
   {
     path:'/dashboard',
     element:
@@ -76,6 +80,8 @@ const router = createBrowserRouter([
       <Footer/>
     </div>
   },
+=======
+>>>>>>> 4c65b3ea9e291544bfa95a9f0a31ee93e2b0c7a2
 
 
   

@@ -4,6 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+<<<<<<< HEAD
+=======
+    "start": "vite",
+>>>>>>> 4c65b3ea9e291544bfa95a9f0a31ee93e2b0c7a2
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -15,7 +19,13 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
+<<<<<<< HEAD
     "react-router": "^7.1.5"
+=======
+    "react-player": "^2.16.0",
+    "react-router": "^7.1.5",
+    "react-router-dom": "^7.2.0"
+>>>>>>> 4c65b3ea9e291544bfa95a9f0a31ee93e2b0c7a2
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",

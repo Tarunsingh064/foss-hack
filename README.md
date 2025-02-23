@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🧠 Harmony - Your Personal Mental Health Companion
 
 ### 🌿 **Bringing Peace to Your Mind, One Click at a Time**
@@ -36,6 +37,8 @@ We welcome **developers, designers, and mental health advocates** to contribute!
 
 ### 💖 **Let's make mental health care accessible for all!**
 =======
+=======
+>>>>>>> 4c65b3ea9e291544bfa95a9f0a31ee93e2b0c7a2
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -44,4 +47,7 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<<<<<<< HEAD
 >>>>>>> e595b7e (Initial commit - Added frontend project)
+=======
+>>>>>>> 4c65b3ea9e291544bfa95a9f0a31ee93e2b0c7a2

@@ -22,4 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
 db.sqlite3
+=======
+>>>>>>> 4c65b3ea9e291544bfa95a9f0a31ee93e2b0c7a2

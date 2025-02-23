@@ -25,7 +25,11 @@ const Navbar = () => {
           <li className='text-amber-50 text-xl font-bold hover-text-amber-50 font-serif'><Link to="/">Home</Link></li>
           <li className=' text-xl hover-text-amber-50 font-bold font-serif'><Link to="/chalanges">Treatment</Link></li>
             <li className=' text-xl hover-text-amber-50 font-bold font-serif'><Link to="/Meditation">Meditation</Link></li>
+<<<<<<< HEAD
           <li className=' text-xl hover-text-amber-50 font-bold font-serif'><Link to="/Post">community support</Link></li>
+=======
+          <li className=' text-xl hover-text-amber-50 font-bold font-serif'><Link to="/Post">Post</Link></li>
+>>>>>>> 4c65b3ea9e291544bfa95a9f0a31ee93e2b0c7a2
 
 
         </ul>
@@ -48,7 +52,11 @@ const Navbar = () => {
         <li className='text-amber-50 text-xl font-bold font-serif'><Link to="/">Home</Link></li>
           <li className=' text-xl hover-text-amber-50 font-bold font-serif'><Link to="/chalanges">Treatment</Link></li>
             <li className=' text-xl hover-text-amber-50 font-bold font-serif'><Link to="/Meditation">Meditation</Link></li>
+<<<<<<< HEAD
           <li className=' text-xl hover-text-amber-50 font-bold font-serif'><Link to="/Post">community support</Link></li>
+=======
+          <li className=' text-xl hover-text-amber-50 font-bold font-serif'><Link to="/Post">Post</Link></li>
+>>>>>>> 4c65b3ea9e291544bfa95a9f0a31ee93e2b0c7a2
         </ul>
 
         <ul className="flex flex-col gap-5 p-4">
