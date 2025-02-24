@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 # 🧠 Harmony - Your Personal Mental Health Companion
 
 ### 🌿 **Bringing Peace to Your Mind, One Click at a Time**
